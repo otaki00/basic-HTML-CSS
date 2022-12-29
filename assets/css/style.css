@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    --secColor:rgba(255,255,255,0.7);
+    --mainColor:#f4623a;
+}
+.containear{
+    width: 80%;
+    margin: auto;
+   
+}
+.navbar .containear{
+    overflow: auto;
+}
+.header{
+    background-color: red;
+}
+.navbar{
+    
+    position: fixed;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-top: 15px;
+   
+    
+}
+
+
+@media (min-width: 576px) { 
+.logo .nav{
+    width: 100%;
+    text-align: center;
+}
+.logo{
+    margin-top: 20px;
+}
+}
+
+
+
+.logo{
+    float: left;
+    width: 35%;
+    color:var(--secColor)
+}
+.nav{
+    float: left;
+    width: 65%;
+    
+    text-align: right;
+    font-size: 20px;
+
+}
+.nav .list{
+    list-style: none;
+}
+.list-item{
+    display: inline-block;
+}
+.nav .link{
+    color: var(--secColor);
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.header-contant{
+    background-image: url(../img/bg-masthead.jpg);
+    height: 100vh;
+    background-position: 0 -140px ;
+    background-size:cover ;
+    
+   
+}
+.header-contant-item{ 
+   text-align: center;
+    padding-top: 220px;
+}
+.main-title{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+    width: 50%;
+    margin: auto;
+}
+.line{
+   background-color: var(--mainColor);
+   height: 3px;
+   width: 50px;
+   display: block;
+   margin:20px auto;
+}
+.p-header-contant{
+    color: var(--secColor);
+    margin: auto;
+    width: 48%;
+    font-size: 19px;
+}
+.link-header{
+   text-decoration: none;
+    color: #fff;
+    display: block;
+    background-color: #f4623a;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 39px;
+    text-transform: uppercase;
+
+}
+
+.seconed{
+    background-color: var(--mainColor);
+   height: 70vh;
+   
+}
+.seconed-item{
+    text-align: center;
+    padding-top:150px;
+   
+   
+}
+.h-seconed{
+   color: #fff;
+   text-transform: capitalize;
+   font-size: 37px;
+   width: 50%;
+   margin: auto;
+}
+.span-seconed{
+    display: block;
+    width: 55px;
+    height: 3px;
+   background-color:#fff ; 
+    margin:20px auto;
+    
+}
+.p-seconed{
+    color: var(--secColor);
+    font-size: 18px;
+    margin: auto;
+    width: 53%;
+}
+.a-seconed{
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: fit-content;
+    
+    text-transform: uppercase;
+    border-radius: 40px;
+    margin:20px auto;
+    padding:25px;
+}
+.therd{
+    height: 70vh;
+    text-align: center;
+    padding-top: 140px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.h2-therd{
+   
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bolder;
+    color:  #212529;
+  
+}
+.therd-item{
+    overflow: hidden;
+}
+.item{
+   
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 60px;
+}
+.item .fas{
+    color: var(--mainColor);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.h3-item{
+    text-transform:capitalize;
+    font-size:25px ;
+    font-weight: bolder;
+  padding:10px;
+    
+}
+.p-item{
+    color: darkgrey;
+    width: 85%;
+    margin: auto;
+    font-size: 17px;
+}
+
+.portfolio-items{
+    overflow: hidden;
+    padding: 0;
+   position:relative;
+
+}
+
+.portfolio .portfolio-item{
+    float: left;
+    width: 33.3333%;   
+    position: relative;
+}
+
+.portfolio img{
+    display: block;
+}
+ .overlay{
+     position: absolute;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+    background-color: var(--mainColor);
+    opacity: 0;
+}
+.overlay-contant{
+    text-align: center;
+    padding-top: 149px;
+}
+.port-second{
+    color: #fff;
+    font-size: 20px;
+}
+.port-main{
+    color: var(--secColor);
+    font-size: 15px;
+}
+.portfolio-item:hover .overlay{
+    opacity: 0.8;
+}
+
+
+.download{
+    background-color: #212529;
+    text-align:center;
+    height: 50vh;
+}
+.download .h-download{
+    padding-top: 100px;
+    color: #fff;
+    font-size:35px;
+}
+.download .link-header{
+    background-color: #fff;
+    color: black;
+    font-weight: 500;
+}
+.contact{
+    height: 160vh;
+}
+.contact-item{
+    text-align: center;
+}
+.contact-item .p-header-contant{
+    color: #6c757d;
+}
+.contact-item .h2-therd{
+    padding-top: 120px;
+}
+.contact-forms{
+    width: 450px;
+    margin: auto;
+}
+.contact-form{
+    margin: auto;
+    margin-top: 40px;
+   
+}
+.username{
+    padding-bottom: 30px;
+}
+.mail{
+    padding-bottom: 30px;
+}
+.tel{
+    padding-bottom: 30px;
+}
+.massege{
+    padding-bottom: 30px;
+}
+.contact-form .form-inputs{
+
+    border-color: #dc3545;
+    border-radius: 5px;
+   height: 40px;
+   width: 450px;
+
+}
+.contact-form .textarea-form{
+    border-color: #dc3545;
+    border-radius: 5px;
+}
+.label-form{
+    display: block;
+   text-align: left;
+   padding-top: 10px;
+   color:#dc3545;
+}
+.supmit-button{
+    width: 450px;
+    height: 45px;
+    border-radius: 10rem;
+    border: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+.sympol-contact{
+    margin:45px;
+}
+.sympol{
+    display: block;
+}
+.sympol-contact .fas{
+    font-size: 30px;
+    color: #6c757d;
+    padding-bottom: 10px;
+}
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { }
+
+
+@media (min-width: 992px) { }
+
+
+@media (min-width: 1200px) { }
+
+
+@media (min-width: 1400px) {  }
